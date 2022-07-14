@@ -1,0 +1,6 @@
+@for $i from 10 through 24 {
+    .icon-#{$i} {
+        width: #{$i}px;
+        height: #{$i}px;
+    }
+}

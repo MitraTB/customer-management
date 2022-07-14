@@ -1,0 +1,45 @@
+@mixin sm {
+    @media (max-width: 600px) {
+        @content;
+    }
+}
+@mixin md {
+    @media (min-width: 601px) and (max-width: 1440px) {
+        @content;
+    }
+}
+@mixin mdUp {
+    @media (min-width: 601px) {
+        @content;
+    }
+}
+@mixin mdVerticalUp {
+    @media (min-width: 1024px) {
+        @content;
+    }
+}
+@mixin mdVertical {
+    @media (min-width: 601px) and (max-width: 1024px) {
+        @content;
+    }
+}
+@mixin mdVerticalDown {
+    @media (max-width: 1024px) {
+        @content;
+    }
+}
+@mixin mdDown {
+    @media (max-width: 1439px) {
+        @content;
+    }
+}
+@mixin lg {
+    @media (min-width: 1441px) {
+        @content;
+    }
+}
+@mixin xl {
+    @media (min-width: 1904px) {
+        @content;
+    }
+}

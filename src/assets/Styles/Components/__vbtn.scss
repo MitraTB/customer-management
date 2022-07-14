@@ -1,0 +1,77 @@
+@import "./../variables";
+.v-btn {
+    width: auto;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 3px;
+    color: #fff;
+    transition: all 0.3 linear;
+    position: relative;
+    opacity: 1;
+    border: none;
+    cursor: pointer;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    &__export,
+    &__create {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        line-height: 40px;
+        font-size: 13px;
+        font-weight: 200;
+        float: right;
+        color: rgb(75 75 75);
+    }
+    &__square {
+        width: 40px;
+        height: 40px;
+        font-size: 1.8rem;
+    }
+    &__label {
+        color: #909090;
+        font-weight: 300;
+        font-size: var(--font-size-14);
+    }
+    &__inline {
+        display: inline-flex;
+    }
+    &__text {
+        color: inherit;
+        background: transparent;
+    }
+    &:not(&__square, &__text) {
+        min-width: 175px;
+        max-width: 100%;
+    }
+    &--dense {
+        padding: 0;
+        height: auto;
+    }
+    &--primary {
+        background: $app-color-primary;
+    }
+    &--dark {
+        color: #fff;
+    }
+    &--block {
+        width: 100%;
+    }
+    &--disabled {
+        opacity: 0.9;
+        cursor: auto;
+        background-color: #909090;
+    }
+    &:hover,
+    &:focus {
+        opacity: 0.8;
+    }
+}
